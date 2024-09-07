@@ -1,0 +1,39 @@
+{
+  "name": "tobono/acorn-auth",
+  "type": "package",
+  "license": "MIT",
+  "description": "WordPress Auth to acorn based apps",
+  "authors": [
+    {
+      "name": "Reza Bahreynipour",
+      "email": "bahreynipour@gmail.com"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "sage",
+    "auth",
+    "user",
+    "acorn",
+    "eloquent"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Tobono\\Auth\\": "src/"
+    }
+  },
+  "require": {
+    "tobono/acorn-eloquent": "dev-main",
+    "illuminate/hashing": "^11.0",
+    "illuminate/cookie": "^11.0"
+  },
+  "require-dev": {
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "Tobono\\Auth\\PackageServiceProvider"
+      ]
+    }
+  }
+}
